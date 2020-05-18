@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <!--- jquery and dragabbles -!-->
+ <script type="text/javascript" src="whiteboard-master/public/js/libs/jquery-3.2.1.min.js"></script>
+ <script type="text/javascript" src="whiteboard-master/public/js/libs/jquery-ui.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!--- For icons -!-->
+ <script type="text/javascript" src="whiteboard-master/public/js/libs/fontawseome5.8.1.min.js"></script>
+ <!--- Socket connection -!-->
+ <script type="text/javascript" src="whiteboard-master/public/js/libs/socketio2.0.4.min.js"></script>
+ <!--- Colorpicker -!-->
+ <script type="text/javascript" src="whiteboard-master/public/js/libs/jqColorPicker.min.js"></script>
+ <!--- For keybindings -!-->
+ <script type="text/javascript" src="whiteboard-master/public/js/libs/keymage.min.js"></script>
+
+ <script type="text/javascript" src="whiteboard-master/public/js/keybinds.js"></script>
+ <script type="text/javascript" src="whiteboard-master/public/js/whiteboard.js"></script>
+ <script type="text/javascript" src="whiteboard-master/public/js/main.js"></script>
+
+ <!--- CSS References -!-->
+ <link rel="stylesheet" href="whiteboard-master/public/css/jquery-ui.min.css">
+ <link href="whiteboard-master/public/css/main.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+<head>
+<style>
+    body{
+      font-family: "Roboto", sans-serif;
+    }
+.welcome{
+font-size: 40px;
+color: #800080;
+font-weight: bold;
+    }
+
+.topnav-right {
+  float: right;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:;
+    overflow: hidden;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  width: auto;
+  background-color: #800080;
+  color: white;
+position: relative;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 25px;
+  width: 50px;
+  border-radius: 5px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background:white;
+  color:#800080;
+}
+.fa-twitter{
+  background:white;
+  color:#800080;
+}
+.fa-linkedin{
+  background:white;
+  color:#800080;
+}
+.fa-youtube{
+  background:white;
+  color:#800080;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:#800080;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+
+  color:#800080;
+}
+.split {
+  height: 80%;
+  width: 10%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color:#ac81de;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+input{
+    border-radius: 5px;
+    margin-left: 200px;
+    width: 900px;
+    height: 100px;
+    border-color: #800080;
+}
+
+label{
+    margin-left: 200px;
+ color:#800080;
+ font-size: 20px;
+ font-weight: bold;
+
+}
+/* Style the image inside the centered container, if needed */
+img{
+    width:1400px;
+    
+      height:300px;
+}
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  font-size: 30px;
+  color: #800080;
+  font-weight: bold;
+}
+.forum{
+    width: 900px;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: #bfaed4;
+  margin-left: 200px; 
+  height: 60px;
+  border-radius: 5px;
+}
+h1{
+    font-size: 30px;
+    color: #800080;
+    padding: 0px;
+    font-weight: bold;
+}
+
+</style>
+<title>The learning platform</title>
+
+<link type="text/css" rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html" style="font-weight: bold;">Home</a>
+        <a href="course.html" style="font-weight: bold;">Courses</a>
+        <div class="topnav-right">
+          <a href="forum.html" style="font-weight: bold;">Forums</a>
+          <a href="login.html" style="font-weight: bold;">Login</a>
+        </div>
+      </div>
+
+      <div>
+<img src="https://besthqwallpapers.com/img/original/39426/question-sign-4k-3d-art-creative-concept.jpg">
+<div class="top-left">Ask Your Questions<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;& <br>Clear Your Doubts..</div>
+</div>
+<br>
+<br>
+<div class="forum">
+   <h1>Forums</h1>
+</div>
+<br>
+<br>
+<form action="/action_page.php">
+        <label for="fname">Question</label><br>
+        
+        <input type="text" id="fname" name="fname" value="">
+        <br>
+        <br>
+      
+        <input type="submit" style="height: 40px; width: 80px;" value="Submit">
+        
+        <img class="image" style="width: 30px; height: 30px;float: inline-start; margin-left: 700px;"src="https://www.freeiconspng.com/uploads/purple-thumbs-up-icon-30.png">
+<h6 style="width: 30px; height: 30px;float: inline-start; margin-left: 995px;">3</h6>
+    </form> 
+
+    
+<br>
+<section>
+    <footer>
+      <div>
+      <p>All Rights Reserved<br>
+      <a href="">tharshika.balachandran98@gmail.com</a></p>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+    </div>
+    </footer>
+    </section>
+
+
+
+
+</body>
+
+</html>
